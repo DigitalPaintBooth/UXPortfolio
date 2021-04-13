@@ -5,7 +5,7 @@
 
 .flex-container  {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
         background: rgb(255, 255, 255);
   }
@@ -37,10 +37,10 @@
       color: #bdbdbd;
   }
   
-  /* *********** media queries *********** */
-  @media all and (max-width: 1000px) {
+  
+  @media all and (max-width: 1920px) {
     .flex-container {
-      flex-direction: column;
+      flex-direction: row;
     }
     
     .logo {
@@ -51,15 +51,31 @@
       width: 100%;
       justify-content: space-around;
     }
+  
+  
+
+  @media all and (max-width: 1200px) {
+    .flex-container {
+      flex-direction: column;
+    }
+    
+    .logo {
+      margin: 0;
+      align-self: flex-start;
   }
+    
+    .navigation  {
+      width: 100%;
+      justify-content: space-around;
+    }
   
   
-  /* ****** ****** */
+  
   @media all and (max-width: 600px) {
    
     .logo {
       margin-top: auto 0;
-      align-self: center; /* align the logo to the left side of 'flex-container' */
+      align-self: flex-start; 
 }
     
     .navigation {
@@ -79,109 +95,72 @@
     }
   }
 
-  .social-1{
-    padding:30px;
-    align-items: space-between;
-    align-content: center;
-    position: absolute;
-    bottom: 0;
-    padding: 30px;
-    z-index: 2;
-}
+  .center-Container{
+    width:100%;
+  }
 
-  .footer{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    height: 150px;
-    background: black;
-    z-index:1;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
-.container {
-	width: 960px;
-	max-width: 100%;
-	padding: 0 auto;
-	margin: 50px;
-}
-
-.sr-only {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-}
-
-.main-header .container {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-.main-nav ul {
-	margin: 1em 0 .5em;
-	text-align: center;
-}
-.main-nav li {
-	display: inline;
-}
-.main-nav a {
-	display: inline-block;
-	padding: .5em 1.5em;
-}
-
-.dpb-logo {
-    margin: 0 0 -10px;
-}
-
-@media (min-width: 960px) {
-	.main-header .container {
-		justify-content: space-between;
-	}
-
-
-/** .flex-container{
-    display: inline-block;
-    background-color: greenyellow;
+  .flex-container2 {
+    width:100%;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 100%;
-    margin-top: 50px;
-    justify-content: space-between;
+    align-content: center;   
+    background: black;
+    align-items: vertical;
 
+  }
+
+.spacerLeft{
+  width:100%;
+  height: 125px;
+  flex-grow:2;
+}
+.spacerRight{
+  width:100%;
+  height: 125px;
+}
+
+  .flex-1 {
+    margin-top:30px;
+    padding:20px;
 }
 
 
-.flexchild-Left{
-    flex-grow: 0;
-    flex-shrink:0;
+.social-2{
+  margin-top:30px;
+  padding:20px;
+}
+
+.social-3{
+  margin-top:30px;
+  padding:20px;
+}
+
+.logotypeContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
 }
 
 
-.headerText{
-    display: table-column;
-    position:relative;
-    left: 90%;
-    width:space-between;
-}
-**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -16,6 +16,13 @@ h2{
   font-size:1rem;
 }
 
+p{
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size:1.25rem;
+}
+
 p1{
   color: #474747;
   font-family: 'Open Sans', sans-serif;
@@ -89,9 +96,9 @@ a.ex1:hover{
   }
   
 
-  @media all and (max-width: 1200px) {
+  @media all and (max-width: 1300px) {
     .flex-container {
-      flex-direction: column;
+      flex-direction: row;
     }
  
     .navigation  {
@@ -101,14 +108,15 @@ a.ex1:hover{
   }
   
   
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 950px) {
     .flex-container {
       display: flexbox;
       flex-direction: column;
+      align-content:left;
     }
    
     .navigation {
-      width: 100%;
+      width: 90%;
       flex-direction: column;
     }
     
@@ -133,6 +141,7 @@ a.ex1:hover{
     
     .navigation a { 
       text-align: center; 
+      align-items:center;
       padding: 20px;
       border-top: 1px solid rgba(255,255,255,0.3); 
       border-bottom: 1px solid rgba(0,0,0,0.1); 
@@ -155,30 +164,21 @@ a.ex1:hover{
   .center-Container{
     display:flex;
     align-content: center;
-    padding: 10% 10% 20% 10%;
+    padding: 10% 10% 10% 10%;
     flex-direction:column;
   }
  
   .caseStudiesHeader{
     display:flex;
     align-items: center;
-    padding: 10% 10% 0% 15%;
+    padding: 10% 10% 0% 10%;
   }
 
-  .caseStudiesContainer {
+  .caseStudyContainer1 {
     display:flex;
     align-items: center;
     flex-direction:column;
     padding: 1% 10% 20% 10%;
-  }
-
-  .caseStudy1 {
-    margin:5px;
-    padding-bottom:5%;
-  }
-
-  .caseStudy2 {
-    margin:5px;
   }
 
   .footer-container {
@@ -229,6 +229,137 @@ a.ex1:hover{
   background-color: rgb(0, 0, 0);
 }
 
+@media all and (max-width: 950px) {
+  .contact-Container {
+    display: flexbox;
+    flex-direction: column;
+    padding: 10% 10% 10% 10%;
+  }
+}
+
+
+.contact-Container{
+  display:flex;
+  align-content: center;
+  padding: 10% 10% 15% 10%;
+}
+
+
+
+
+a { 
+  text-decoration: none;
+}
+
+.caseStudy1 {
+  margin:5px;
+  position: relative;
+  width: 100%;
+}
+
+.TSAimage  {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.caseStudy1:hover .TSAimage {
+  opacity: 0.3;
+}
+
+.caseStudy1:hover .middle1 {
+  opacity: 1;
+}
+
+.text1 {
+  background-color: #c90404;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-decoration:none;
+}
+
+.caseStudyText {
+  padding-bottom:75px;
+}
+
+
+
+.caseStudy2 {
+  position: relative;
+  width: 100%;
+  margin:5px;
+}
+
+.ACLUimage  {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.caseStudy2:hover .ACLUimage {
+  opacity: 0.3;
+}
+
+.caseStudy2:hover .middle2 {
+  opacity: 1;
+}
+
+.text2 {
+  background-color: #c90404;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.a {
+  background-color: #c90404;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.caseStudyACLU {
+  display:flex;
+  align-content: center;
+  padding: 1% 10% 10% 10%;
+  flex-direction:column;
+}
+
+
+.pencils{
+  vertical-align:bottom;
+  margin-bottom:-1%;
+
+}
 
 /**
 .dropbtn {
